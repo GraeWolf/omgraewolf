@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -eEo pipefail
+
+echo "Enabling and starting NetworkManager."
+sudo systemctl enable --now NetworkManager
+
+echo "Enabling and starting Bluetooth."
+sudo systemctl enable --now bluetooth
+
+echo "Enabling and starting timesyncd."
+sudo systemctl enalbe --now systemd-timesycd
