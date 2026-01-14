@@ -2,17 +2,17 @@
 
 set -euo pipefail
 
-./install/ssh_setup.sh
-./install/git_setup.sh
-./install/install_xdg_user_dirs.sh
-./install/install_xlibre.sh
-./install/install_nvidia.sh
-./install/install_wm.sh
-./install/install_fonts.sh
-./install/install_ghostty.sh
-./install/install_nvim.sh
-./install/install_steam.sh
-./install/install_lockscreen.sh
-./install/install_av.sh
-#./install/install_firewall.sh
-./install/enable_services.sh
+./install/01-ssh_setup.sh
+./install/02-git_setup.sh
+./install/03-install_xdg_user_dirs.sh
+./install/04-install_xlibre.sh
+./install/05-install_nvidia.sh
+./install/06-install_wm.sh
+./install/07-setup_automount.sh
+./install/08-install_fonts.sh
+./install/09-install_ghostty.sh
+./install/10-install_nvim.sh
+./install/11-install_steam.sh
+./install/12-install_lockscreen.sh
+./install/13-install_av.sh
+./install/14-enable_services.sh
