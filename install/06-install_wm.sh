@@ -7,7 +7,7 @@ sudo dnf install -y bspwm sxhkd rofi picom polybar fastfetch \
            arandr polkit-gnome gvfs networkmanager networkmanager-wifi \
            bluez bluez-tools pipewire pipewire-pulse pavucontrol \
            lxappearance lxsession feh unzip alsa-utils bat \
-	   pcmanfm xsettingsd dunst zoxide bash-completion starship
+	         pcmanfm xsettingsd dunst zoxide bash-completion 
 
 chmod 755 bspwm/bspwmrc
 chmod 644 sxhkd/sxhkdrc
