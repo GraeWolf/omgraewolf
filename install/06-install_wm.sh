@@ -6,19 +6,19 @@ set -eEo pipefail
 sudo dnf install -y bspwm sxhkd rofi picom polybar fastfetch \
            arandr polkit-gnome gvfs networkmanager networkmanager-wifi \
            bluez bluez-tools pipewire pipewire-pulse pavucontrol \
-           lxappearance lxsession feh unzip alsa-utils bat \
-	         pcmanfm xsettingsd dunst zoxide bash-completion 
+           lxsession feh unzip alsa-utils bat \
+	         xsettingsd dunst zoxide bash-completion 
 
 chmod 755 bspwm/bspwmrc
 chmod 644 sxhkd/sxhkdrc
 
-ln -sfn $(pwd)/bspwm /home/$USER/.config/bspwm
-ln -sfn $(pwd)/xsettingsd /home/$USER/.config/xsettingsd
-ln -sfn $(pwd)/picom /home/$USER/.config/picom
-ln -sfn $(pwd)/polybar /home/$USER/.config/polybar
-ln -sfn $(pwd)/sxhkd /home/$USER/.config/sxhkd
-ln -sfn $(pwd)/xinitrc /home/$USER/.xinitrc
-ln -sfn $(pwd)/scripts /home/$USER/.local/scripts
+ln -sfn $(pwd)/bspwm $HOME/.config/bspwm
+ln -sfn $(pwd)/xsettingsd $HOME/.config/xsettingsd
+ln -sfn $(pwd)/picom $HOME/.config/picom
+ln -sfn $(pwd)/polybar $HOME/.config/polybar
+ln -sfn $(pwd)/sxhkd $HOME/.config/sxhkd
+ln -sfn $(pwd)/xinitrc $HOME/.xinitrc
+ln -sfn $(pwd)/scripts $HOME/.local/scripts
 ln -sfn $(pwd)/dunst $HOME/.config/dunst
 ln -sfn $(pwd)/.bash_profile $HOME/.bash_profile
 ln -sfn $(pwd)/.bashrc $HOME/.bashrc
