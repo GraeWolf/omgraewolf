@@ -13,9 +13,9 @@ else
         sudo dnf install -y kernel-headers
 fi
 
-sudo dnf config-manager --set-enabled extra
-sudo dnf config-manager --set-enabled restricted
-sudo dnf config-manager --set-enabled non-free
+sudo dnf config-manager setopt rolling-x86_64-extra.enabled=1
+sudo dnf config-manager setopt rolling-x86_64-restricted.enabled=1
+sudo dnf config-manager setopt rolling-x86_64-non-free.enabled=1
 
 # Installing the Nvidia drivers
 sudo dnf install -y nvidia nvidia-kmod-open-desktop --refresh
