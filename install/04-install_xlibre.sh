@@ -2,4 +2,4 @@
 
 set -eEo pipefail
 
-sudo dnf install -y xlibre xinit xauth xrandr xclip setxkbmap libbsd0
+sudo dnf install -y xlibre xinit xauth xrandr xclipboard setxkbmap libbsd0
