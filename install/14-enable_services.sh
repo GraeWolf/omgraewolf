@@ -9,4 +9,4 @@ echo "Enabling and starting Bluetooth."
 sudo systemctl enable --now bluetooth
 
 echo "Enabling and starting timesyncd."
-sudo systemctl enalbe --now systemd-timesycd
+sudo systemctl enable --now systemd-timesyncd
